@@ -1,0 +1,42 @@
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script src="https://unpkg.com/react-redux@5.0.6/dist/react-redux.min.js"></script>
+<script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
+<script src="https://unpkg.com/babel-preset-es2015@6.24.1/lib/index.js"></script>
+
+<script type="text/babel" data-presets="es2015,react" src="constants.js"></script>
+<script type="text/babel" data-presets="es2015,react" src="initial.state.js"></script>
+<script type="text/babel" data-presets="es2015,react" src="Counter.js"></script>
+<script type="text/babel" data-presets="es2015,react" src="CounterContainer.js"></script>
+<script type="text/babel" data-presets="es2015,react" src="actions.js"></script>
+<script type="text/babel" data-presets="es2015,react" src="reducers.js"></script>
+
+<script type="text/babel" data-presets="es2015,react">
+  const Application = () => (
+    <div>
+      <CounterContainer />
+    </div>
+  );
+
+  const middleware = [];
+  const enhancers = [];
+
+  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || Redux.compose;
+  const store = Redux.createStore(
+    reducers,
+    getInitialState(),
+    composeEnhancers(Redux.applyMiddleware(...middleware), ...enhancers)
+  );
+
+  ReactDOM.render(
+    <ReactRedux.Provider store={store}>
+      <Application />
+    </ReactRedux.Provider>,
+    document.getElementById('root'),
+  )
+
+</script>
+</body>
