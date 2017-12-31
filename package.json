@@ -1,0 +1,23 @@
+{
+  "name": "getting-started-with-redux",
+  "version": "1.0.0",
+  "description": "In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach you how to manage state in your React application with Redux. [source](https://egghead.io/courses/getting-started-with-redux)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgirma/getting-started-with-redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xgirma/getting-started-with-redux/issues"
+  },
+  "homepage": "https://github.com/xgirma/getting-started-with-redux#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "redux": "^3.7.2"
+  }
+}
