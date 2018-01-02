@@ -1,7 +1,6 @@
 # Writting a Counter Reducer with Tests
-Reducer accepts state and action as arguments and returns the next state.
+Reducer accepts **state** and **action** as arguments and returns the next state.
 
-Reducer 1
 ```javascript
 function counter(state, action) {
   if(action.type === 'INCREMENT'){
@@ -12,7 +11,6 @@ function counter(state, action) {
 }
 ```
 
-Test 2
 ```javascript
 expect(
   counter(2, { type: 'DECREMENT' })
@@ -22,7 +20,7 @@ expect(
   counter(1, { type: 'DECREMENT' })
 ).toEqual(0);
 ```
-Test pass. However, if we check for that we will see that this test fails, because we currently don't handle unknown actions.
+Test pass. However, if we check for that we will see that this test fails, because we currently `don't handle unknown actions`.
 
 ```javascript
 expect(
@@ -31,7 +29,6 @@ expect(
 ```
 If we dispatch an action that it does not understand, it should return the `current state` of the application.
 
-Reducer 2
 ```javascript
 function counter(state, action) {
   if(action.type === 'INCREMENT'){
@@ -42,7 +39,7 @@ function counter(state, action) {
   return state;
 }
 ```
-Test 3
+
 ```javascript
 expect(
   counter(undefined, {})
@@ -51,7 +48,6 @@ expect(
 
 The convention we use in Redux is that `if the reducer receives undefined as the state argument, it must return what it considers to be the initial state of the application`. In this case let it will be 0.
 
-Reducer 3
 ```javascript
 function counter(state, action) {
   if (typeof state === 'undefined'){
@@ -74,5 +70,3 @@ const counter = (state = 0, action) => {
   }
 }
 ```
-
-
