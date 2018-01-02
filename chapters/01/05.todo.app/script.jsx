@@ -15,7 +15,7 @@ const Filters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 };
-git
+
 /*
  * Components
  */
