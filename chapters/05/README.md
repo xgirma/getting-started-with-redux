@@ -1,4 +1,7 @@
 # Writting a Counter Reducer with Tests
+
+[04. The Reducer Function](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/04)
+
 Reducer accepts **state** and **action** as arguments and returns the next state.
 
 ```javascript
@@ -70,3 +73,5 @@ const counter = (state = 0, action) => {
   }
 }
 ```
+
+[06. Store Methods: getState(), dispatch(), and subscribe()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/06)

@@ -1,5 +1,4 @@
-# The Single Immutable State Tree
-
+# 01. The Single Immutable State Tree
 In Redux weather your app is simple or complex your state are going to represent the `whole state` of your application as a `single JavaScript object`. 
 
         state = single JavaScript object
@@ -14,3 +13,4 @@ These are all plain objects, describing what happens in a app.
 
 Now you know the second principle of Redux -- the state is read only. The only way to change the state tree is by dispatching an action. An action is a plain JavaScript object, describing in the minimal way what changed in the application. Whether it is initiated by a network request or by user interaction, any data that gets into the Redux application gets there by actions.
 
+[02. Describing State Changes with Actions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/02)
