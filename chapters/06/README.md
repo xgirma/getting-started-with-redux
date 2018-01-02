@@ -119,4 +119,4 @@ document.addEventListener('click', () => {
 
 This is our first working Redux application. :feet: :feet: :feet:
 
-[05. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)
+[07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)

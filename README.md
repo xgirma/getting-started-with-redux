@@ -11,3 +11,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [04. The Reducer Function](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/04)
 
 [05. Writting a Counter Reducer with Tests](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/05)
+
+[06. Store Methods: getState(), dispatch(), and subscribe()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/06)
