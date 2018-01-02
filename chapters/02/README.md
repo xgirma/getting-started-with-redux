@@ -1,4 +1,4 @@
-# Redux: Describing State Changes with Actions
+# Describing State Changes with Actions
 
 The second principle of Redux is that the `state tree` is `read only`. _You cannot modify or write to it_. Instead, anytime `you want to change the state`, you need to **dispatch an action**.
 

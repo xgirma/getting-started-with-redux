@@ -1,4 +1,4 @@
-# Redux: The Single Immutable State Tree
+# The Single Immutable State Tree
 
 In Redux weather your app is simple or complex your state are going to represent the `whole state` of your application as a `single JavaScript object`. 
 
