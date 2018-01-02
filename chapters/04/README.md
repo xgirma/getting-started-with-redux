@@ -1,6 +1,7 @@
 # 04. The Reducer Function
 
 [03. Pure and Impure Functions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/03)
+
 There is something in common between all Redux applications. They have to implement the _reducer: a function that calculates the next state tree based on the previous state tree and the action being dispatched_.
 
 
