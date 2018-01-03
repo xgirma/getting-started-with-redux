@@ -9,7 +9,7 @@ const addCounter = (list) => {
   return list;
 };
 ```
-:bangbang: mutable :bangbang:
+:skull: mutable :skull:
 
 ```javascript
 it('should mutate', () => {
@@ -28,7 +28,7 @@ const addCounter = (list) => {
   return list;
 };
 ```
-:bangbang: mutable :bangbang:
+:skull: mutable :skull:
 
 ```javascript
 import deepFreeze from 'deep-freeze';
