@@ -17,3 +17,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)
 
 [08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
+
+[09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
