@@ -9,6 +9,7 @@ const addCounter = (list) => {
   return list;
 };
 ```
+:bangbang: mutable :bangbang:
 
 ```javascript
 it('should mutate', () => {
@@ -17,8 +18,17 @@ it('should mutate', () => {
   expect(addCounter(listBefore)).toEqual(listAfter);
 });
 ```
+Test: :white_check_mark:
 ## deep freeze
 At first, I use the array push method to add a new item at the end of the array, and it works. However, we need to learn to avoid mutations in Redux, and I'm enforcing this by calling **deepFreeze** on the original array.
+
+```javascript
+const addCounter = (list) => {
+  list.push(0);
+  return list;
+};
+```
+:bangbang: mutable :bangbang:
 
 ```javascript
 import deepFreeze from 'deep-freeze';
@@ -32,18 +42,21 @@ it('should not mutate, with deep-freeze', () => {
   expect(addCounter(listBefore)).toEqual(listAfter);
 });
 ```
+Test: :x:
 
 <img width="645" alt="screen shot 2018-01-03 at 2 44 30 am" src="https://user-images.githubusercontent.com/5876481/34517507-1c697078-f030-11e7-861b-910123271b43.png">
 
-Now my attempt to push does not work. `It cannot add a new property to a frozen object`. Instead of `push`, I'm going to use the `concat` method, which `does not modify the original array`.
+Now my attempt to push does not work. `It cannot add a new property to a frozen object`. 
 
 ## concat
+Instead of `push`, I'm going to use the `concat` method, which `does not modify the original array`.
 
 ```javascript
 const addCounter = (list) => {
   return list.concat(0);
 };
 ```
+:ok_hand: immutable :ok_hand:
 
 ```javascript
 import deepFreeze from 'deep-freeze';
@@ -57,8 +70,7 @@ it('should not mutate, with deep-freeze', () => {
   expect(addCounter(listBefore)).toEqual(listAfter);
 });
 ```
-
-Test pass !!!
+Test Test: :white_check_mark:
 
 ## ES6 array spread operator
 Now the tests pass without mutations, and I can also use the new `ES6 array spread operator` to write the same code in a more concise way.
