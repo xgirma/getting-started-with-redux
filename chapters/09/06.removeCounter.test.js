@@ -2,7 +2,7 @@ import deepFreeze from 'deep-freeze';
 import removeCounter from './06.removeCounter';
 
 describe('immutable', () => {
-  it('should not mutate, with slice', () => {
+  it('should not mutate, with slice, concat', () => {
     const listBefore = [0, 10, 20];
     const listAfter = [0, 20];
 

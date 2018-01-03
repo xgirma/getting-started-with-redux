@@ -5,5 +5,6 @@ describe('mutable', () => {
     const listBefore = [];
     const listAfter = [0];
     expect(addCounter(listBefore)).toEqual(listAfter);
+    expect(listBefore).toEqual(listAfter);
   });
 });

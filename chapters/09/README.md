@@ -17,6 +17,7 @@ it('should mutate', () => {
   const listBefore = [];
   const listAfter = [0];
   expect(addCounter(listBefore)).toEqual(listAfter);
+  expect(listBefore).toEqual(listAfter);
 });
 ```
 Test: :white_check_mark:
@@ -74,7 +75,7 @@ it('should not mutate, with deep-freeze', () => {
 ```
 Test Test: :white_check_mark:
 
-## ES6 array spread operator
+## array spread operator
 Now the tests pass without mutations, and I can also use the new `ES6 array spread operator` to write the same code in a more concise way.
 
 ```javascript

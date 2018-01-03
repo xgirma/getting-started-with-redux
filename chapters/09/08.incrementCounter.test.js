@@ -1,4 +1,3 @@
-import deepFreeze from 'deep-freeze';
 import incrementCounter from './08.incrementCounter';
 
 describe('mutable', () => {
