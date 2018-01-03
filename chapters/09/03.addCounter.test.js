@@ -9,5 +9,6 @@ describe('immutable', () => {
     deepFreeze(listBefore);
 
     expect(addCounter(listBefore)).toEqual(listAfter);
+    expect(listBefore).not.toEqual(listAfter);
   });
 });

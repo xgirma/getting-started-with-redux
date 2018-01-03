@@ -69,6 +69,7 @@ it('should not mutate, with deep-freeze', () => {
   deepFreeze(listBefore);
   
   expect(addCounter(listBefore)).toEqual(listAfter);
+  expect(addCounter).not.toEqual(listAfter);
 });
 ```
 Test Test: :white_check_mark:
@@ -94,7 +95,7 @@ describe('mutable', () => {
     deepFreeze(listBefore);
 
     expect(addCounter(listBefore)).toEqual(listAfter);
-    expect(addCounter).not.toEqual(listAfter);
+    expect(listBefore).not.toEqual(listAfter);
   });
 });
 ```
@@ -123,6 +124,22 @@ it('should mutate, with splice', () => {
 });
 ```
 Test Test: :white_check_mark:
+
+With deep-freeze, test fails
+```javascript
+it('should mutate, with splice', () => {
+  const listBefore = [0, 10, 20];
+  const listAfter = [0, 20];
+
+  deepFreeze(listBefore);
+
+  expect(removeCounter(listBefore, 1)).toEqual(listAfter);
+  expect(listBefore).toEqual(listAfter);
+});
+```
+Test: :x:
+
+<img width="584" alt="screen shot 2018-01-03 at 4 18 36 am" src="https://user-images.githubusercontent.com/5876481/34520396-4748adce-f03d-11e7-8637-3e3ebaa39268.png">
 
 I'm going to **deepFreeze** the array object, and now I need to figure out a different way to remove an item from the array without mutating it.
 
