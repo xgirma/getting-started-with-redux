@@ -2,7 +2,7 @@ import deepFreeze from 'deep-freeze'
 import removeCounter from './05.removeCounter';
 
 describe('mutable', () => {
-  it('should mutate, with splice', () => {
+  xit('should mutate, with splice', () => {
     const listBefore = [0, 10, 20];
     const listAfter = [0, 20];
 

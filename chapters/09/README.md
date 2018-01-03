@@ -127,6 +127,14 @@ Test Test: :white_check_mark:
 
 With deep-freeze, test fails
 ```javascript
+const removeCounter = (list, index) => {
+  list.splice(index, 1);
+  return list
+};
+```
+:skull: mutable :skull:
+
+```javascript
 it('should mutate, with splice', () => {
   const listBefore = [0, 10, 20];
   const listAfter = [0, 20];
@@ -146,6 +154,8 @@ I'm going to **deepFreeze** the array object, and now I need to figure out a dif
 ## slice with concat
 I'm using a method called `slice` here, and it doesn't have anything to do with splice. **It is not mutating**, and it gives me a part of the array from some beginning to some end index.
 
+What Im doing is that Im taking the parts before the index I want to skip and after the index I want to skip, and I concatenate them to get a new array.
+
 ```javascript
 const removeCounter = (list, index) => {
   return list
@@ -153,7 +163,7 @@ const removeCounter = (list, index) => {
     .concat(list.slice(index + 1));
 };
 ```
-What Im doing is that Im taking the parts before the index I want to skip and after the index I want to skip, and I concatenate them to get a new array.
+:ok_hand: immutable :ok_hand:
 
 ```javascript
 it('should not mutate, with slice', () => {
@@ -166,6 +176,7 @@ it('should not mutate, with slice', () => {
   expect(listBefore).not.toEqual(listAfter);
 });
 ```
+Test: :white_check_mark:
 
 ## Array spread
 Finally, instead of writing it as a method chain with `concat` calls, I can use the `ES6 array spread operator` to write it more concisely.
@@ -178,6 +189,7 @@ const removeCounter = (list, index) => {
   ]
 };
 ```
+:ok_hand: immutable :ok_hand:
 
 ```javascript
 it('should not mutate, with slice', () => {
@@ -190,6 +202,7 @@ it('should not mutate, with slice', () => {
   expect(listBefore).not.toEqual(listAfter);
 });
 ```
+Test: :white_check_mark:
 
 ## incrementing
 Now that we implemented adding and removing counters, let's implement increment in the counter. The incrementCounter function takes two arguments, the array and the index of the counter that should be incremented, so the return value has the same count of items, but one of them is incremented.
@@ -200,6 +213,7 @@ const incrementCounter = (list, index) => {
   return list;
 };
 ```
+:skull: mutable :skull:
 
 ```javascript
 it('should mutate', () => {
@@ -207,10 +221,20 @@ it('should mutate', () => {
   const listAfter = [0, 11, 20];
 
   expect(incrementCounter(listBefore, 1)).toEqual(listAfter);
+  expect(listBefore).toEqual(listAfter);
 });
 ```
+Test: :white_check_mark:
 
 Directly setting the array value at index works, but this is a mutation. If we add a deepFreeze call, it's not going to work anymore.
+
+```javascript
+const incrementCounter = (list, index) => {
+  list[index]++;
+  return list;
+};
+```
+:skull: mutable :skull:
 
 ```javascript
 it('should mutate', () => {
@@ -222,6 +246,7 @@ it('should mutate', () => {
   expect(incrementCounter(listBefore, 1)).toEqual(listAfter);
 });
 ```
+Test: :x:
 
 <img width="771" alt="screen shot 2018-01-03 at 3 36 17 am" src="https://user-images.githubusercontent.com/5876481/34519083-4ebd7ed2-f037-11e7-906c-16367c5d5970.png">
 
