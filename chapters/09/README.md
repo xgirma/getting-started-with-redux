@@ -1,6 +1,7 @@
 # 09. Avoiding Array Mutations with concat(), slice(), and ...spread
 [08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
 
+## push
 The first function I want to write is called `addCounter`, and all it should do is to `append a 0 at the end` of the past array.
 
 ```javascript
@@ -80,6 +81,7 @@ const addCounter = (list) => {
   return [...list, 0];
 };
 ```
+:ok_hand: immutable :ok_hand:
 
 ```javascript
 import deepFreeze from 'deep-freeze';
@@ -92,9 +94,11 @@ describe('mutable', () => {
     deepFreeze(listBefore);
 
     expect(addCounter(listBefore)).toEqual(listAfter);
+    expect(addCounter).not.toEqual(listAfter);
   });
 });
 ```
+Test Test: :white_check_mark:
 
 ## splice
 My next function is called removeCounter, and it accepts two arguments, an array of numbers, and the index of the number to skip from the array.
@@ -107,6 +111,7 @@ const removeCounter = (list, index) => {
   return list
 };
 ```
+:skull: mutable :skull:
 
 ```javascript
 it('should mutate, with splice', () => {
@@ -114,8 +119,10 @@ it('should mutate, with splice', () => {
   const listAfter = [0, 20];
 
   expect(removeCounter(listBefore, 1)).toEqual(listAfter);
+  expect(listBefore).toEqual(listAfter);
 });
 ```
+Test Test: :white_check_mark:
 
 I'm going to **deepFreeze** the array object, and now I need to figure out a different way to remove an item from the array without mutating it.
 
