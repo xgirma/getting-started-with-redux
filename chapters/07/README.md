@@ -22,7 +22,7 @@ const createStore = (reducer) => {
 
 Because the `subscribe` function can be called many times, we need to keep track of all the changed listeners. Any time it is called we want to push the new `listener` into the array. Dispatching an action is the only way to change the internal state.
 
-```javascript
+```diff
 const createStore = (reducer) => {
   let state;
   let listeners = [];
@@ -32,7 +32,7 @@ const createStore = (reducer) => {
   const dispatch = (action) => {};
   
   const subscribe = (listener) => {
-    listeners.push(listener);
++    listeners.push(listener);
   };
   
   return { getState, dispatch, subscribe }
@@ -41,7 +41,7 @@ const createStore = (reducer) => {
 
 Dispatching an action is the only way to change internal state. In order to calculate the new state we call the `reducer` with the current `state` and the `action` being dispatched. After the `state` was updated, we need to notify every changed listener, by calling it.
 
-```javascript
+```diff
 const createStore = (reducer) => {
   let state;
   let listeners = [];
@@ -49,8 +49,8 @@ const createStore = (reducer) => {
   const getState = () => state;
   
   const dispatch = (action) => {
-    state = reducer(state, action);
-    listeners.forEach(listener => listener());
++    state = reducer(state, action);
++    listeners.forEach(listener => listener());
   };
   
   const subscribe = (listener) => {
@@ -63,7 +63,7 @@ const createStore = (reducer) => {
 
 There is an important missing piece here. We haven't provided a way to `unsubscribe` a listener. Instead of adding a dedicated `unsubscribe` method, we'll just return a function from the `subscribe` method that removes this listener from the `listeners` array.
 
-```javascript
+```diff
 const createStore = (reducer) => {
   let state;
   let listeners = [];
@@ -77,9 +77,9 @@ const createStore = (reducer) => {
   
   const subscribe = (listener) => {
     listeners.push(listener);
-    return () => {
-      listeners = listeners.filter(l => l !== listener)
-    }
++    return () => {
++      listeners = listeners.filter(l => l !== listener)
++    }
   };
   
   return { getState, dispatch, subscribe }
@@ -88,7 +88,7 @@ const createStore = (reducer) => {
 
 Finally, by the time the store is returned we wanted to have the initial state populated. We're going to `dispatch` a dummy action just to get the reducer to return the initial value.
 
-```javascript
+```diff
 const createStore = (reducer) => {
   let state;
   let listeners = [];
@@ -107,7 +107,7 @@ const createStore = (reducer) => {
     }
   };
   
-  dispatch({});
++  dispatch({});
   
   return { getState, dispatch, subscribe }
 }
