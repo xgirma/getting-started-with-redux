@@ -178,7 +178,7 @@ it('should not mutate, with slice', () => {
 ```
 Test: :white_check_mark:
 
-## Array spread
+## array spread
 Finally, instead of writing it as a method chain with `concat` calls, I can use the `ES6 array spread operator` to write it more concisely.
 
 ```javascript
@@ -262,6 +262,20 @@ const incrementCounter = (list, index) => {
     .concat(list.slice(index + 1));
 };
 ```
+:ok_hand: immutable :ok_hand:
+
+```javascript
+it('should not mutate, with slice, concat', () => {
+  const listBefore = [0, 10, 20];
+  const listAfter = [0, 11, 20];
+
+  deepFreeze(listBefore);
+
+  expect(incrementCounter(listBefore, 1)).toEqual(listAfter);
+  expect(listBefore).not.toEqual(listAfter);
+});
+```
+Test: :white_check_mark:
 
 with ES6 array spread operator
 ```javascript
@@ -273,6 +287,7 @@ const incrementCounter = (list, index) => {
   ]
 };
 ```
+:ok_hand: immutable :ok_hand:
 
 Finally, with the ES6 spread operator, we can spread over the left part of the array, specify the new item, and then spread over the right part of the original array, and this looks much nicer.
 
@@ -284,8 +299,10 @@ it('should mutate', () => {
   deepFreeze(listBefore);
 
   expect(incrementCounter(listBefore, 1)).toEqual(listAfter);
+  expect(listBefore).not.toEqual(listAfter);
 });
 ```
+Test: :white_check_mark:
 
 In this lesson, you learned how to use the `concat` method or the `spread operator`, and the slice method to **add, remove, and change items in arrays without mutating** them, and how to protect yourself with deepFreeze from mutation in your tests.
 
