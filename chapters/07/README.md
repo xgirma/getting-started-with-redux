@@ -115,4 +115,4 @@ const createStore = (reducer) => {
 
 This implementation of the Redux store apart from a few minor details and edge cases, is the createStore shipped with Redux.
 
-[06. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
+[08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
