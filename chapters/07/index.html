@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Store Methods: getState(), dispatch(), and subscribe()</title>
+  <script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://unpkg.com/redux@3.7.2/dist/redux.js"></script>
+
+  <script type="text/jsx" src="reducer.jsx"></script>
+  <script type="text/babel" src="createStore.jsx"></script>
+</head>
+
+<body>
+<div id='root'></div>
+<script type="text/babel">
+  const store = createStore(counter);
+
+  const render = () => {
+    document.body.innerText = store.getState();
+  };
+
+  store.subscribe(render);
+  render();
+
+  document.addEventListener('click', () => {
+    store.dispatch({ type: 'INCREMENT' });
+  });
+</script>
+</body>
+</html>
