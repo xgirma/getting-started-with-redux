@@ -19,3 +19,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
 
 [09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
+
+[10. Avoiding Array Mutations with Object.assign() and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
