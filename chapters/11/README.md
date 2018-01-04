@@ -1,4 +1,4 @@
-# Writing a Todo List Reducer (Adding a Todo)
+# 11. Writing a Todo List Reducer (Adding a Todo)
 
 [10. Avoiding Array Mutations with Object.assign(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
 
