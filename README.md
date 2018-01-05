@@ -23,3 +23,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [10. Avoiding Array Mutations with Object.assign() and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
 
 [11. Writting a Todo List Reducer (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
+
+[11. Writting a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/12)
