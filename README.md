@@ -28,4 +28,4 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 
 [13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
 
-[14. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
+[14. Reducer Composition with Objects](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/14)
