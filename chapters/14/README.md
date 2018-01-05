@@ -1,5 +1,6 @@
 # 14 Reducer Composition with Objects
-[13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
+[<<< 13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
+
 In the previous lesson, we established the `pattern of reducer composition` where one reducer can be called by another reducer to update items inside an `array`.
 
 Representing the whole state of the application as an `array of todos works for a simple example`, but what if we want to store more information? For example, we may want to let the user choose which todos are currently visible with the **visibilityFilter** such as `SHOW_COMPLETED, SHOW_ALL,` or `SHOW_ACTIVE`.
@@ -258,4 +259,4 @@ describe('immutable: visibility', () => {
 ```
 Test: :white_check_mark:
 
-[15. Reducer Composition with CombineReducers()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/15)
+[>>> 15. Reducer Composition with CombineReducers()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/15)
