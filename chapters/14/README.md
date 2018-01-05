@@ -88,7 +88,7 @@ const todoApp = (state = {}, action) => {
 
 `Now that the first time it runs, it will pass undefined as the state of the child reducers because the initial state of the combined reducer is an empty object`, so all its fields are undefined. This `gets the child reducers to return their initial states and populates the state object for the first time`.
 
-```javascript
+```diff
 const todo = (state, action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -135,12 +135,12 @@ const visibilityFilter = (state = 'SHOW_ALL', action) => {
   }
 };
 
-const todoApp = (state = {}, action) => {
-  return {
-    todos: todos(state.todos, action),
-    visibilityFilter: visibilityFilter(state.visibilityFilter, action)
-  };
-};
++ const todoApp = (state = {}, action) => {
++  return {
++    todos: todos(state.todos, action),
++    visibilityFilter: visibilityFilter(state.visibilityFilter, action)
++  };
++ };
 
 export default todoApp;
 ```
