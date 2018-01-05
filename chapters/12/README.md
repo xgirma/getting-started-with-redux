@@ -1,6 +1,6 @@
 # 12. Writing a Todo List Reducer (Toggling a Todo)
 
-[11. Writting a Todo List Reducer (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
+[<<< 11. Writting a Todo List Reducer (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
 
 In this lesson, we will follow the same approach to implement another action called `TOGGLE_TODO`. We're going to start with a test again.
 
@@ -88,4 +88,4 @@ Now test is passing !!!
 
 The function I pass as an argument will be called for every `todo`. If it's not a `todo` I'm looking for, I don't want to change it. I just return it as is. However, if the `todo` is the one we want to toggle, I'm going to return a new object that has all the properties of the original todo object thanks to the object's spread operator, but also an inverted value of the completed field.
 
-[13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
+[>>> 13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)

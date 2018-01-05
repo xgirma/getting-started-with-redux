@@ -1,6 +1,6 @@
 # 03. Pure and Impure Functions
 
-[02. Describing State Changes with Actions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/02)
+[<<< 02. Describing State Changes with Actions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/02)
 
 **Some functions are more predictable than others**. You will learn the difference between the pure and impure functions. Understanding this difference is essential for writing Redux applications.
 
@@ -41,4 +41,4 @@ function squareAll(items){
 
 This is going to be an important distinction because some of the functions that you're going to write in Redux have to be pure, and you need to be mindful of that.
 
-[04. The Reducer Function](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/04)
+[>>> 04. The Reducer Function](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/04)

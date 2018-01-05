@@ -1,6 +1,7 @@
 # 13. Reducer Composition with Arrays
 
-[12. Writting a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/12)
+[<<< 12. Writting a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/12)
+
 In the previous lesson we created a reducer that can handle two actions, adding a new todo, and toggling an existing todo. Right now, **the code to update the todo item or to create a new one is placed right inside of the todos reducer**.
 
 ```javascript
@@ -283,4 +284,4 @@ Different reducers specify how different parts of the state tree are updated in 
 
 > This pattern can be applied many times, and while there is still a single top level reducer managing the state of your app, you will find it convenient to express it as many reducers call on each other, each contribution to a part of the applications state tree.
 
-[14. Reducer Composition with Objects](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/14)
+[>>> 14. Reducer Composition with Objects](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/14)

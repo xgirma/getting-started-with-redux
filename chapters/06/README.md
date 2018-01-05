@@ -1,6 +1,6 @@
 # 06. Store Methods: getState(), dispatch(), and subscribe()
 
-[05. Writting a Counter Reducer with Tests](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/05)
+[<<< 05. Writting a Counter Reducer with Tests](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/05)
 
 We will learn about the Redux Store and demonstrate how its three methods let us implement a counter application.
 
@@ -119,4 +119,4 @@ document.addEventListener('click', () => {
 
 This is our first working Redux application. :feet: :feet: :feet:
 
-[07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)
+[>>> 07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)

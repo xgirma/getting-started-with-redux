@@ -1,5 +1,5 @@
 # 09. Avoiding Array Mutations with concat(), slice(), and ...spread
-[08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
+[<<< 08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
 
 ## push
 The first function I want to write is called `addCounter`, and all it should do is to `append a 0 at the end` of the past array.
@@ -307,4 +307,4 @@ Test: :white_check_mark:
 
 In this lesson, you learned how to use the `concat` method or the `spread operator`, and the slice method to **add, remove, and change items in arrays without mutating** them, and how to protect yourself with deepFreeze from mutation in your tests.
 
-[10. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
+[>>> 10. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)

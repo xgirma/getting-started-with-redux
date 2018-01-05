@@ -1,5 +1,5 @@
 # 10. Avoiding Object Mutations with Object.assign() and ...spread
-[09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
+[<<< 09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
 
 Learn how to use **Object.assign()** and the **spread** operator proposed for ES7 to avoid mutating objects.
 
@@ -189,4 +189,4 @@ it('should not be mutable', () => {
 ```
 Test: :white_check_mark:
 
-[11. Writting a Todo List Reducer (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
+[>>> 11. Writting a Todo List Reducer (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)

@@ -1,6 +1,6 @@
 # 07. Implementing Store from Scratch
 
-[06. Store Methods: getState(), dispatch(), and subscribe()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/06)
+[<<< 06. Store Methods: getState(), dispatch(), and subscribe()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/06)
 
 Build a reasonable approximation of the Redux Store in 20 lines. No magic! :poodle: :poodle: :poodle:
 
@@ -115,4 +115,4 @@ const createStore = (reducer) => {
 
 This implementation of the Redux store apart from a few minor details and edge cases, is the createStore shipped with Redux.
 
-[08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)
+[>>> 08. React Counter Example](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/08)

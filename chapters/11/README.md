@@ -1,6 +1,6 @@
 # 11. Writing a Todo List Reducer (Adding a Todo)
 
-[10. Avoiding Array Mutations with Object.assign(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
+[<<< 10. Avoiding Array Mutations with Object.assign(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/10)
 
 Just like in the previous two lessons, I'm using `expect` library (now a part of Jest) to make test `assertions` and `deep-freeze` library to prevent accidental mutations in my code. In this lesson, I will create the `reducer` for `a todo list` application whose state is described an `array of todos`.
 
@@ -112,4 +112,4 @@ expect(
 
 [5] Finally, we compare the return value to an array with a single todo item to make sure that the reducer works as intended. The equality check passes. This makes the test successful.
 
-[12. Writing a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
+[>>> 12. Writing a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)

@@ -1,6 +1,6 @@
 # 04. The Reducer Function
 
-[03. Pure and Impure Functions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/03)
+[<<< 03. Pure and Impure Functions](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/03)
 
 There is something in common between all Redux applications. They have to implement the _reducer: a function that calculates the next state tree based on the previous state tree and the action being dispatched_.
 
@@ -23,4 +23,4 @@ For example, if I change the `visibilityFilter`, **I have to create a new object
         
 Now you know the third and the last principle of Redux. **To describe state mutations, you have to write a function that takes the previous state of the app, the action being dispatched, and returns the next state of the app**. **This function has to be pure**. This function is called the Reducer.
 
-[05. Writting a Counter Reducer with Tests](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/05)
+[>>> 05. Writting a Counter Reducer with Tests](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/05)

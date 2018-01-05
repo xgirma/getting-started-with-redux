@@ -1,5 +1,5 @@
 # 08. React Counter Example
-[07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)
+[<<< 07. Implementing Store from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/07)
 
 Previously: update the document body manually.
 ```html
@@ -96,4 +96,4 @@ const counter = (state = 0, action) => {
 ```
 
 
-[09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
+[>>> 09. Avoiding Array Mutations with concat(), slice(), and ...spread](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/09)
