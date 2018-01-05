@@ -19,8 +19,8 @@ describe('immutable', () => {
     deepFreeze(visibilityBefore);
     deepFreeze(action);
 
-    expect(visibilityFilter(visibilityBefore, action)).toEqual(visibilityAfter)
-    expect(visibilityBefore).not.toEqual(visibilityAfter)
+    expect(visibilityFilter(visibilityBefore, action)).toEqual(visibilityAfter);
+    expect(visibilityBefore).not.toEqual(visibilityAfter);
   });
 
   it('should return default state', () =>{
@@ -40,7 +40,7 @@ describe('immutable', () => {
     deepFreeze(visibilityBefore);
     deepFreeze(action);
 
-    expect(visibilityFilter(visibilityBefore, action)).toEqual(visibilityAfter)
-    expect(visibilityBefore).toEqual(visibilityAfter)
+    expect(visibilityFilter(visibilityBefore, action)).toEqual(visibilityAfter);
+    expect(visibilityBefore).toEqual(visibilityAfter);
   });
 });

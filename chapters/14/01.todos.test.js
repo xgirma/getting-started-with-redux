@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import todoApp from './01.todoApp';
+import todos from './01.todos';
 
 describe('immutable', () => {
   it('should not mutate, with deep-freeze of beforeState, and action', () => {
@@ -18,7 +18,7 @@ describe('immutable', () => {
     deepFreeze(todosBefore);
     deepFreeze(action);
 
-    expect(todoApp(todosBefore, action)).toEqual(todosAfter);
+    expect(todos(todosBefore, action)).toEqual(todosAfter);
     expect(todosBefore).not.toEqual(todosAfter);
   });
 
@@ -57,7 +57,7 @@ describe('immutable', () => {
     deepFreeze(todosBefore);
     deepFreeze(action);
 
-    expect(todoApp(todosBefore, action)).toEqual(todosAfter);
+    expect(todos(todosBefore, action)).toEqual(todosAfter);
     expect(todosBefore).not.toEqual(todosAfter);
   });
 });
