@@ -112,4 +112,4 @@ expect(
 
 [5] Finally, we compare the return value to an array with a single todo item to make sure that the reducer works as intended. The equality check passes. This makes the test successful.
 
-[>>> 12. Writing a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/11)
+[>>> 12. Writing a Todo List Reducer (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/12)
