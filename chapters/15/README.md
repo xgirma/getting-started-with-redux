@@ -1,4 +1,4 @@
-# 15 Reducer composition with combineReducers()
+# 15. Reducer composition with combineReducers()
 
 [<<< 14. Reducer Composition with Objects](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/14)
 

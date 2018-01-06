@@ -1,4 +1,4 @@
-# 14 Reducer Composition with Objects
+# 14. Reducer Composition with Objects
 [<<< 13. Reducer Composition with Arrays](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/13)
 
 In the previous lesson, we established the `pattern of reducer composition` where one reducer can be called by another reducer to update items inside an `array`.
