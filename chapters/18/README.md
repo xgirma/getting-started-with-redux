@@ -1,6 +1,6 @@
 # 18. React Todo List Example (Toggling a Todo)
 
-[17. React Todo List Example (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/17)
+[<<< 17. React Todo List Example (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/17)
 
 To `add the todos`, we `dispatched the ADD_TODO action`. In this lesson, we're going to `dispatch the TOGGLE_TODO action` `to toggle` the completed state of the todos by clicking on them.
 
@@ -92,5 +92,5 @@ render();
 
 **[5]** Finally, this **child of the list item**, depends on the **todo.completed** field, which we just updated, which is why it re-renders in a cross-child state.
 
-[19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
+[>>> 19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
 

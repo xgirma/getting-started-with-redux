@@ -1,6 +1,6 @@
 # 17. React Todo List Example (Adding a Todo)
 
-[16. Implementing combineReducers() from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/16)
+[<<< 16. Implementing combineReducers() from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/16)
 
 Learn how to create a React todo list application using the reducers we wrote before.
 
@@ -205,4 +205,4 @@ render();
 
 
 
-[18. React Todo List Example (Filtering a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/18)
+[>>> 18. React Todo List Example (Filtering a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/18)
