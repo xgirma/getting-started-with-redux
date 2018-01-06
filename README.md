@@ -31,3 +31,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [14. Reducer Composition with Objects](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/14)
 
 [15. Reducer composition with combineReducers()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/15)
+
+[16. Implementing combineReducers() from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/16)
