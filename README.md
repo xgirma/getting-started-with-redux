@@ -33,3 +33,7 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [15. Reducer composition with combineReducers()](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/15)
 
 [16. Implementing combineReducers() from Scratch](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/16)
+
+[17. React Todo List Example (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/17)
+
+[18. React Todo List Example (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/18)
