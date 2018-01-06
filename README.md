@@ -37,3 +37,5 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [17. React Todo List Example (Adding a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/17)
 
 [18. React Todo List Example (Toggling a Todo)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/18)
+
+[19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
