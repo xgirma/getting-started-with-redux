@@ -68,7 +68,7 @@ const AddTodo = ({ onAddClick }) => {
 ```
 **[2]** Again, the **TodoApp component acts as a container componen**t for the AddTodo. It specifies that when add button is clicked, we should dispatch an action with the type ADD_TODO, the corresponding text, and the next todo id.
 
-```javascript
+```html
 <AddTodo
   onAddClick={text => store.dispatch({
     type: 'ADD_TODO',
@@ -155,11 +155,36 @@ Finally, I just noticed that the TodoApp component doesn't actually have to be a
 
 Instead of destructuring the props inside the render method, I am now doing it inside the argument. I can remove now the destructuring. I'm also going to remove the render method declaration. The visibleTodos are only used in a single place, so I'm moving the getVisibleTodos call to the TodoList todos prop declaration. Now the body of my function is just a single expression, so I can get rid of the return statement and unindent code to make it look nicer.
 
+```javascript
+let nextTodoId = 0;
+const { Component } = React;
+const TodoApp = ({ todos, visibilityFilter }) => (
+  <div>
+    <AddTodo
+      onAddClick={text => store.dispatch({
+        type: 'ADD_TODO',
+        id: nextTodoId++,
+        text
+      })}/>
 
+    <TodoList todos={
+      getVisibleTodos(todos, visibilityFilter)}
+              onTodoClick={id =>
+                store.dispatch({
+                  type: 'TOGGLE_TODO',
+                  id
+                })}/>
 
-
-
-
-
+    <Footer
+      visibilityFilter={visibilityFilter}
+      onFilterClick={filter =>
+        store.dispatch({
+          type: 'SET_VISIBILITY_FILTER',
+          filter
+        })}
+    />
+  </div>
+);
+```
 
 [22. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/22)

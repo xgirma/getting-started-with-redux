@@ -27,4 +27,3 @@ const TodoApp = ({todos, visibilityFilter}) => (
     />
   </div>
 );
-
