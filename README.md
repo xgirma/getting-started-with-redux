@@ -41,3 +41,7 @@ In this comprehensive tutorial, Dan Abramov - the creator of Redux - will teach 
 [19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
 
 [20. Extracting Presentational Components (Todo, TodoList)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/20)
+
+[21. Extracting Presentational Components (AddTodo, Footer, FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/21)
+
+[22. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/22)
