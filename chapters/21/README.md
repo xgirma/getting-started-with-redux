@@ -70,9 +70,10 @@ const AddTodo = ({ onAddClick }) => {
 
 ```javascript
 <AddTodo
-  onAddClick={id => store.dispatch({
+  onAddClick={text => store.dispatch({
     type: 'ADD_TODO',
-    id: nextTodoId++
+    id: nextTodoId++,
+    text
   })
   }/>
 ```
