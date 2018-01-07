@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <script src="https://unpkg.com/react-redux@5.0.6/dist/react-redux.min.js"></script>
+  <script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
+
+  <script type="text/babel" data-presets="es2015,react" src="todoAppReducer.js"></script>
+</head>
+<body>
+  <div id='root'></div>
+  <script type="text/babel" data-presets="es2015,react" src="FilterLink.js"></script>
+  <script type="text/babel" data-presets="es2015,react" src="TodoApp.js"></script>
+  <script type="text/babel" data-presets="es2015,react" src="Todo.js"></script>
+  <script type="text/babel" data-presets="es2015,react" src="TodoList.js"></script>
+
+  <script type="text/jsx" data-presets="es2015,react">
+    const middleware = [];
+    const enhancers = [];
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || Redux.compose;
+    const store = Redux.createStore(
+      todoAppReducer,
+      composeEnhancers(Redux.applyMiddleware(...middleware), ...enhancers)
+    );
+
+
+    const render = () => {
+      ReactDOM.render(<TodoApp {...store.getState()}/>, document.getElementById('root'));
+    };
+
+    store.subscribe(render);
+    render();
+
+  </script>
+</body>
+</html>
