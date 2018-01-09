@@ -1,6 +1,6 @@
 # 21. Extracting Presentational Components (AddTodo, Footer, FilterLink)
 
-[20. Extracting Presentational Components (Todo, TodoList)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/20)
+[<<< 20. Extracting Presentational Components (Todo, TodoList)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/20)
 
 **[1]** Now I want to extract the `input` and the `button` into a separate component called, **AddTodo** I'm declaring AddTodo as a **functional component** that doesn't accept any props. I'm going to return these copy pasted input and button, but I'm `wrapping them in a div because a component needs to have a single root element`.
 
@@ -187,4 +187,4 @@ const TodoApp = ({ todos, visibilityFilter }) => (
 );
 ```
 
-[22. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/22)
+[>>> 22. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/22)

@@ -1,6 +1,6 @@
 # 20. Extracting Presentational Components (Todo, TodoList)
 
-[19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
+[<<< 19. React Todo List Example (Filtering Todos)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/19)
 
 Learn how to `separate` the **looks** from the **behavior** by extracting presentational components. So we're going to refactor our application in this lesson.
 
@@ -112,4 +112,4 @@ The TodoApp component renders a TodoList, and it passes a function to it that ca
 The Todo component just uses the onClick prop it receives and binds it to the list item onClick. This way, when it's called, the onTodoClick is called, and this dispatches the action and updates the visibleTodos because the action updates the store.
 
 
-[21. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/21)
+[>>> 21. Extracting Container Components (FilterLink)](https://github.com/xgirma/getting-started-with-redux/tree/master/chapters/21)
