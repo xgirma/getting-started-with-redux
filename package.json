@@ -32,7 +32,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "jest": "^22.0.4",
-    "jest-cli": "^22.0.4"
+    "jest-cli": "^29.0.0"
   },
   "jest": {
     "testEnvironment": "node"
